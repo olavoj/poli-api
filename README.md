@@ -10,4 +10,6 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
+A dependência **openai** deve estar na versão 1.x (por exemplo `openai>=1.0,<2.0`).
+
 \xc3\x89 necess\xc3\xa1rio definir a vari\xc3\xa1vel de ambiente `OPENAI_API_KEY` com sua chave antes de rodar.
