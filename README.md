@@ -3,7 +3,7 @@ API para processar produtos Poli em XML
 
 ## Gerador de descri\xc3\xa7\xc3\xb5es
 
-O reposit\xc3\xb3rio inclui um pequeno aplicativo em **Streamlit** que usa a API da OpenAI para gerar descri\xc3\xa7\xc3\xb5es de produtos. Para execut\xc3\xa1-lo:
+O reposit\xc3\xb3rio inclui um pequeno aplicativo em **Streamlit** que usa a API da OpenAI (vers\xc3\xa3o 1.x) para gerar descri\xc3\xa7\xc3\xb5es de produtos. Para execut\xc3\xa1-lo:
 
 ```bash
 pip install -r requirements.txt

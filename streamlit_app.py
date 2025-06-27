@@ -1,8 +1,8 @@
 import os
 import streamlit as st
-import openai
+from openai import OpenAI
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.title("Gerador de Descricoes de Produtos")
 
@@ -18,7 +18,7 @@ if submitted and nome and categoria and publico:
         f"da categoria '{categoria}' voltado para o publico '{publico}'. "
         "Responda em portugues."
     )
-    resposta = openai.ChatCompletion.create(
+    resposta = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
     )
